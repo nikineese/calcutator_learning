@@ -40,6 +40,7 @@ class Calculator{
             case '*':
                 computation = prev * curr; break;
             case '÷':
+                if (prev === 0 && curr === 0) return
                 computation = prev / curr; break;
             default:
                 return;
